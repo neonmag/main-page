@@ -44,25 +44,28 @@ img {
 
 .GrayContainer{
     display: flex;
-    height: 100%;
+    height: 95%;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .UpperDivGrayContainer{
     display: flex;
     justify-content: center;
     width: 80%;
-    height: 50%;
+    height: 60%;
+    margin-left: 10%;
 }
 
 .GrayTextContainer{
-    margin-top: 5%;
+    margin-top: 2%;
     width: 50%;
 }
 
 .BigText{
-    margin-top: 5%;
+    margin-top: 2%;
     text-align: left;
     font-size: 18px;
 }
@@ -72,10 +75,10 @@ img {
     flex-direction: column;
     justify-content: center;
     justify-content: space-between;
-    margin-top: 12%;
+    margin-top: 7%;
     margin-left: 20%;
     width: 30%;
-    height: 80%;
+    height: 70%;
 }
 
 .Icon{
@@ -92,4 +95,22 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.UnderGrayDiv{
+    height: 60%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.ImgContainer{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.InsideImg{
+    height: 350px;
+    width: 350px;
 }

@@ -34,7 +34,13 @@ nav{
 }
 
 .NavigateButton{
-    width: 6rem;
+    width: 12rem;
+    background-color: white;
+    border: none;
+    justify-content: center;
+}
+
+.ImgButton{
     background-color: white;
     border: none;
     justify-content: center;

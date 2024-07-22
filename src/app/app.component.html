@@ -22,7 +22,7 @@
         <img src="../assets/img/language.png"/>
       </button>
       <button class="ImgButton">
-        <img src="../assets/img/profile.png"/>
+        <img src="../assets/img/profile.png" (click)="openModal()" style="cursor: pointer;"/>
       </button>
       <button class="ImgButton">
         <img src="../assets/img/shopping-cart.png"/>
@@ -30,4 +30,49 @@
     </div>
   </nav>
 </div>
+
+<div id="profileModal" class="modal" [ngClass]="{'show': isModalOpen}">
+  <div class="modal-content">
+    <span class="close" (click)="closeModal()">&times;</span>
+    <div class="ModalContainer">
+      <div class="RegisterWrapper">
+          <div class="Form">
+              <span class="TextStyle">
+                Username
+              </span>
+              <input type="text" placeholder="Input your username" class="InputStyle"/>
+              <span class="TextStyle">
+                Password
+              </span>
+              <input type="text" placeholder="Input your password" class="InputStyle"/>
+              <span class="TextStyle">
+                Repeat Password
+              </span>
+              <input type="text" placeholder="Repeat your password" class="InputStyle"/>
+              <span class="TextStyle">
+                Email
+              </span>
+              <input type="text" placeholder="Enter your email" class="InputStyle"/>
+              <button style="width: 50%; border: 2px solid; border-radius: 24px; background-color: transparent;">Register</button>
+          </div>
+      </div>
+      <div class="Divider">
+      </div>
+      <div class="LoginWrapper">
+        <div class="Form">
+          <span class="TextStyle">
+            Username
+          </span>
+          <input type="text" placeholder="Input your username" class="InputStyle"/>
+          <span class="TextStyle">
+            Password
+          </span>
+          <input type="text" placeholder="Input your  " class="InputStyle"/>
+          <button style="width: 50%; border: 2px solid; border-radius: 24px; background-color: transparent;">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <app-home></app-home>
